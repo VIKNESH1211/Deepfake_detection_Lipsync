@@ -29,9 +29,11 @@ learns powerful audio-visual speech representation benefiting both lip-reading a
 
 The official code of this paper in [here](https://github.com/facebookresearch/av_hubert)
 ## Raw Dataset
-Person speaking OTP (any 6 random digits). We have collected about 105 such videos of different people accounting a total of 105 different combination of numbers.
+Person speaking OTP (any 6 random digits). We have collected about 105 such videos of different people accounting a total of 105 different combination of numbers.Length of the video varies between 6-10 seconds.
 
 [https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/8bc191e6-1173-4b7f-b954-f5f37380ffe5](https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/18337584-6ec9-423f-8c79-b88783c08db4)
+
+https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/1e2a620a-2428-4ade-85ef-5776d2fb6875
 ## Example
 
 <figure>
