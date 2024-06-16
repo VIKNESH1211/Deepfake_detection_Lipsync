@@ -28,7 +28,7 @@ Audio-Visual Hidden Unit BERT (AV-HuBERT), a self-supervised representation lear
 learns powerful audio-visual speech representation benefiting both lip-reading and automatic speech recognition.
 
 The official code of this paper in [here](https://github.com/facebookresearch/av_hubert)
-## Deepfake Generated Videos
+## Raw Dataset
 Person speaking OTP (any 6 random digits). We have collected about 105 such videos of different people accounting a total of 105 different combination of numbers.
 
 [https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/8bc191e6-1173-4b7f-b954-f5f37380ffe5](https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/18337584-6ec9-423f-8c79-b88783c08db4)
