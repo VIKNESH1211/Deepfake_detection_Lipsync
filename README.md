@@ -1,15 +1,4 @@
----
-license: apache-2.0
-language:
-- en
-pipeline_tag: automatic-speech-recognition
-datasets:
-- LRS3
 
-tags:
-- Audio Visual to Text
-- Automatic Speech Recognition
----
 ## OUR APPROACH
 
 ![image](https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/8223a242-65d1-4706-a94a-c6ec10b5215f)
