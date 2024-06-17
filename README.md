@@ -50,16 +50,19 @@ https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/1e2a62
 The authors trained the model on LRS3 with 433 hours of transcribed English videos and English portion of VoxCeleb2, which amounts to 1,326 hours
 
 ## Technique 1: FaceSwap using Roop
+
 **Description:**
 FaceSwap using Roop employs a face-swapping algorithm to seamlessly replace the face of a person in a video with another person's face.
 
 **Features:**
 
-**High-quality face swapping
-Realistic blending
-Consistent facial expressions**
+High-quality face swapping
 
-Video Example:
+Realistic blending
+
+Consistent facial expressions
+
+**Video Example:**
 
 https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/fac289da-9f40-447c-893a-239145a6230e
 
@@ -68,15 +71,18 @@ https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/05f069
 
 
 
-**Technique 2: FaceDancer**
-**Description:**
+**TECHNIQUE 2: FACEDANCER**
+
+Description:
 FaceDancer is a powerful tool for generating deepfakes with smooth transitions and realistic facial movements.
 
 **Features:**
 
-**Smooth transitions
+Smooth transitions
+
 Accurate facial expressions
-Robust to different lighting conditions**
+
+Robust to different lighting conditions
 
 **Video Example:**
 
@@ -87,14 +93,17 @@ https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/cfe440
 
 
 **Technique 3: Wave2Lip+GAN**
+
 **Description:**
 Wave2Lip+GAN combines Wave2Lip’s lipsync capabilities with Generative Adversarial Networks to enhance the realism of the generated video.
 
 **Features:**
 
-**High-quality lipsync
+High-quality lipsync
+
 Enhanced realism with GANs
-Natural-looking speech movements**
+
+Natural-looking speech movements
 
 **Video Example:**
 
@@ -107,14 +116,17 @@ https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/53f8a2
 
 
 **Technique 4: Wave2Lip+ERSGAN**
+
 **Description:**
 Wave2Lip+ERSGAN utilizes the Enhanced Super-Resolution GAN to produce high-resolution deepfakes with precise lipsync and fine details.
 
 **Features:**
 
-**Superior visual quality
+Superior visual quality
+
 High-resolution outputs
-Detailed and realistic lipsync**
+
+Detailed and realistic lipsync
 
 **Video Example:**
 
