@@ -10,6 +10,9 @@ tags:
 - Audio Visual to Text
 - Automatic Speech Recognition
 ---
+## OUR APPROACH
+
+![image](https://github.com/ansh-tandon/Deepfake_detection_Lipsync/assets/90792560/8223a242-65d1-4706-a94a-c6ec10b5215f)
 
 ## Model Description
 
@@ -28,6 +31,7 @@ Audio-Visual Hidden Unit BERT (AV-HuBERT), a self-supervised representation lear
 learns powerful audio-visual speech representation benefiting both lip-reading and automatic speech recognition.
 
 The official code of this paper in [here](https://github.com/facebookresearch/av_hubert)
+
 ## Raw Dataset
 Person speaking OTP (any 6 random digits). We have collected about 105 such videos of different people accounting a total of 105 different combination of numbers.Length of the video varies between 6-10 seconds.
 
