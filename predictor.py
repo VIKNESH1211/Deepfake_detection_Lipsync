@@ -1,10 +1,27 @@
 import cv2
 import tempfile
 from argparse import Namespace
-import av_hubert/fairseq
-from av_hubert/fairseq import checkpoint_utils, tasks, utils
-from av_hubert/fairseq.dataclass.configs import GenerationConfig
+import fairseq
+from fairseq import checkpoint_utils, tasks, utils
+from fairseq.dataclass.configs import GenerationConfig
 from IPython.display import HTML
+from sentence_transformers import SentenceTransformer
+from scipy.spatial.distance import cosine
+
+
+model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+
+
+def text_to_vector(text):
+    return model.encode(text)
+
+def cosine_similarity(vec1, vec2):
+    return 1 - cosine(vec1, vec2)
+
+def audio_to_text(audio_path):
+
+    return "This is a mock transcription of the audio"
+
 
 def predict(video_path, ckpt_path, user_dir):
     num_frames = int(cv2.VideoCapture(video_path).get(cv2.CAP_PROP_FRAME_COUNT))
@@ -43,12 +60,31 @@ def predict(video_path, ckpt_path, user_dir):
     hypo = decode_fn(hypo)
     return hypo
 
-def main():
-    mouth_roi_path = "/content/data/roi.mp4"
-    ckpt_path = "/content/data/finetune-model.pt"
-    user_dir = "/content/av_hubert/avhubert"
-    hypo = predict(mouth_roi_path, ckpt_path, user_dir)
-    return hypo
+
+def authenticate(lip_sync_video_path, audio_path, ckpt_path, user_dir):
+  
+    predicted_text = predict(lip_sync_video_path, ckpt_path, user_dir)
+
+   
+    audio_text = audio_to_text(audio_path)
+
+
+    predicted_vector = text_to_vector(predicted_text)
+    audio_vector = text_to_vector(audio_text)
+
+  
+    similarity = cosine_similarity(predicted_vector, audio_vector)
+    print(f"Cosine Similarity: {similarity}")
+
+    if similarity > 0.8:  
+        print("Authentication Successful")
+    else:
+        print("Authentication Failed")
 
 if __name__ == "__main__":
-    main()
+    lip_sync_video_path = "/content/data/roi.mp4"  
+    audio_path = "/content/data/audio.wav"  
+    ckpt_path = "/content/data/finetune-model.pt"
+    user_dir = "/content/av_hubert/avhubert"
+
+    authenticate(lip_sync_video_path, audio_path, ckpt_path, user_dir)
