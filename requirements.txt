@@ -1,0 +1,10 @@
+numpy==1.19.5
+dlib==19.22.1
+opencv-python==4.5.1.48
+scikit-video==1.1.11
+tqdm==4.61.1
+fairseq==0.10.2
+IPython==7.24.1
+omegaconf==2.0.6
+hydra-core==1.0.6
+editdistance==0.5.3
